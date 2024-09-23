@@ -55,7 +55,7 @@ def obter_llm_chain():
 
 # Função para carregar dados dos produtos (exemplo para ar-condicionado)
 def carregar_produtos():
-    caminho_arquivo = r"D:/DataExperience/Zoe/zoe_webcontinental/produtos/ar_condiconado.csv"
+    caminho_arquivo = r"./produtos/ar_condiconado.csv"
     produtos = pd.read_csv(caminho_arquivo)
     return produtos
 
