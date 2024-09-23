@@ -8,7 +8,6 @@ from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 import pandas as pd
 from fuzzywuzzy import process
-import config as config
 
 # Definição da estrutura de uma mensagem
 @dataclass
