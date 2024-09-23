@@ -8,6 +8,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 import pandas as pd
 from fuzzywuzzy import process
+import config as config
 
 # Definição da estrutura de uma mensagem
 @dataclass
@@ -25,7 +26,7 @@ MENSAGENS = "mensagens"
 def obter_llm() -> ChatOpenAI:
     return ChatOpenAI(
         model_name='gpt-3.5-turbo',
-        openai_api_key='sk-a_clhEM-Ba75n3miFQcBGoaMGUpR46AgDb1dxI6NwDT3BlbkFJrgb_zL0sJ1P2X7X9fxVhs1inuFYT1dOokjdssVfXIA'
+        openai_api_key=config.openai_api_key
     )
 
 # Função para criar o LLMChain com memória de conversação
