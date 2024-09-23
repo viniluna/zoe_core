@@ -25,7 +25,7 @@ MENSAGENS = "mensagens"
 def obter_llm() -> ChatOpenAI:
     return ChatOpenAI(
         model_name='gpt-3.5-turbo',
-        openai_api_key='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'
+        openai_api_key='sk-a_clhEM-Ba75n3miFQcBGoaMGUpR46AgDb1dxI6NwDT3BlbkFJrgb_zL0sJ1P2X7X9fxVhs1inuFYT1dOokjdssVfXIA'
     )
 
 # Função para criar o LLMChain com memória de conversação
